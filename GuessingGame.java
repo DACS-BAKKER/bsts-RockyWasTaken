@@ -50,8 +50,6 @@ public class GuessingGame {
         }
     }
 
-    //I couldn't find a solution to reading the data file back into a tree
-    //My idea was to backtrack a pre order traversal and build the tree according to the results, but I couldn't figure out the implementation
     public static void readData() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("Data.txt"));
         String str = reader.readLine();
@@ -93,7 +91,6 @@ public class GuessingGame {
     //Wrapper method for traversal
     public static void playGame(){
         boolean game = true;
-        int level = 0;
         Node current = user.root;
         while(game){
             if(current.stuff.charAt(0) == 'q'){
@@ -143,7 +140,6 @@ public class GuessingGame {
                 }
                 game = false;
             }
-            level++;
         }
     }
 

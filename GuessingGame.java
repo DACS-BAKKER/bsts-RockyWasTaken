@@ -98,7 +98,6 @@ public class GuessingGame {
         while(game){
             if(current.stuff.charAt(0) == 'q'){
                 StdOut.println(convertString(getContent(current.stuff)));
-                //StdOut.println(current.stuff);
                 StdOut.println("1) Yes");
                 StdOut.println("2) No");
                 int input = StdIn.readInt();
@@ -112,7 +111,6 @@ public class GuessingGame {
             else if(current.stuff.charAt(0) == 'a'){
                 String guess = convertString(getContent(current.stuff));
                 StdOut.println("Is the answer " + guess);
-                //StdOut.println(current.stuff);
                 StdOut.println("1) Yes");
                 StdOut.println("2) No");
                 int input = StdIn.readInt();
@@ -183,7 +181,7 @@ public class GuessingGame {
 
         private BinaryTree(){
             root = new Node("q/Do_programmers_like_this");
-            root.leftNode = new Node("a/Well_organized_code");
+            root.leftNode = new Node("a/Code_compiled_without_errors");
             root.rightNode = new Node("a/Nonexistent_documentation");
         }
     }
